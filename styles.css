@@ -1,0 +1,12 @@
+.button{
+    padding: 10px 20px;
+    color: white;
+    border-radius: 12px;
+
+    background-color: if(
+        style(--variant: primary): blue;
+        style(--variant: danger ): red;
+        style(--variant: success): green;
+        else: gray;
+    );
+}
